@@ -47,7 +47,7 @@ about:
   license_file:
     - LICENSE
   doc_url: https://timescale.readthedocs.io
-  dev_url: https://github.com/tsutterley/timescale
+  dev_url: https://github.com/pyTMD/timescale
 
 extra:
   recipe-maintainers:
