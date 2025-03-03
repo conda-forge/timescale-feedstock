@@ -41,7 +41,7 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/tsutterley/timescale
+  home: https://github.com/pyTMD/timescale
   summary: Python tools for time and astronomical calculations.
   license: MIT
   license_file:
