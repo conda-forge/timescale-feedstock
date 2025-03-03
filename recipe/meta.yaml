@@ -1,5 +1,5 @@
 {% set name = "timescale" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dde6343ad298304b62db6ea1095f4c721bc6303b6a6dc1ddd457a13ece28788e
+  sha256: 53d7040e42fba761c8a63e8258e9151794bab4764152bff603c5f195515110cb
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
@@ -41,13 +41,13 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/tsutterley/timescale
+  home: https://github.com/pyTMD/timescale
   summary: Python tools for time and astronomical calculations.
   license: MIT
   license_file:
     - LICENSE
   doc_url: https://timescale.readthedocs.io
-  dev_url: https://github.com/tsutterley/timescale
+  dev_url: https://github.com/pyTMD/timescale
 
 extra:
   recipe-maintainers:
