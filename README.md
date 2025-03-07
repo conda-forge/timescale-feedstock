@@ -3,13 +3,13 @@ About timescale-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/timescale-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/tsutterley/timescale
+Home: https://github.com/pyTMD/timescale
 
 Package license: MIT
 
 Summary: Python tools for time and astronomical calculations.
 
-Development: https://github.com/tsutterley/timescale
+Development: https://github.com/pyTMD/timescale
 
 Documentation: https://timescale.readthedocs.io
 
