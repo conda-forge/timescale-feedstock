@@ -1,5 +1,5 @@
 {% set name = "timescale" %}
-{% set version = "0.0.9" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e192a7b2f77971f65146e49924a71be594131d8b5bd516deda8366572de6e78b
+  sha256: b0241343931f3b1117c3d2621e17997ffaa414ebbaf301ad33330da65d1df09a
 
 build:
   number: 0
