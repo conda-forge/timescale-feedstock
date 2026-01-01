@@ -1,0 +1,56 @@
+schema_version: 1
+
+context:
+  name: timescale
+  version: 0.1.1
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: c943e4e4db6db9c63813620e03b789e513c59164fde7f07f8616d03fc9651679
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - lxml
+    - numpy
+    - python-dateutil
+    - scipy
+    - setuptools
+
+tests:
+  - python:
+      imports:
+        - timescale
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+    script:
+      - pip check
+
+about:
+  summary: Python tools for time and astronomical calculations.
+  license: MIT
+  license_file:
+    - LICENSE
+  homepage: https://github.com/pyTMD/timescale
+  repository: https://github.com/pyTMD/timescale
+  documentation: https://timescale.readthedocs.io
+
+extra:
+  recipe-maintainers:
+    - tsutterley

@@ -11,7 +11,7 @@ Summary: Python tools for time and astronomical calculations.
 
 Development: https://github.com/pyTMD/timescale
 
-Documentation: https://timescale.readthedocs.io
+Documentation: https://timescale.readthedocs.io/
 
 Current build status
 ====================
